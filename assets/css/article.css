@@ -1,0 +1,14 @@
+/* *{
+    font-size: 15px;
+} */
+ 
+.header{
+    min-height: 15vh;
+}
+.content_box{
+    margin:8% 20% 0 20%
+}
+
+img{
+    margin: auto;
+}
