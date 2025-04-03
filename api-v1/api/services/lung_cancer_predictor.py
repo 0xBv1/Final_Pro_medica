@@ -5,7 +5,7 @@ import joblib
 class LungCancerPredictor:
     def __init__(self):
         """Load the trained lung cancer model."""
-        self.model = joblib.load('api/models/csv/lung_cancer_model.pkl')
+        self.model = joblib.load('api-v1/models/csv/lung_cancer_model.pkl')
 
     def predict(self, features):
         """Predict lung cancer based on structured data."""

@@ -343,6 +343,7 @@
                     <div id="response444">
                         <!-- Image and result will be displayed here -->
                     </div>
+
                 </form>
 
             </div>
@@ -501,137 +502,151 @@
         <div id="disease-symptoms8" class="regist_container">
             <div class="title">Enter Disease Symptoms</div>
             <div class="regist_content">
-                <form action="#">
+                <form action="" method="post" id="cancer-prediction-form">
                     <div class="user-details">
                         <!-- Input for Age -->
                         <div class="regist_input_box">
                             <span class="details">Age</span>
-                            
-                            <input type="number" placeholder="Enter Age" required>
+                            <!-- <input type="text" placeholder="Clump Thickness" required> -->
+                            <input type="number" name="age" placeholder="Enter Age" required>
                         </div>
                         <!-- Input for Gender -->
                         <div class="regist_input_box">
                             <span class="details">Gender</span>
-                            
-                            <select>
+                            <!-- <input type="text" placeholder="Uniform Cell Size" required> -->
+                            <select name="gender">
                                 <option value="Gender" disabled selected hidden>Choose Gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
                             </select>
                         </div>
                         <!-- Input for Smoking -->
                         <div class="regist_input_box">
                             <span class="details">Smoking</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Smoking</option>
-                                <option>Yes</option>
-                                <option>No</option>
+                            <!-- <input type="text" placeholder="Uniform Cell Shape" required> -->
+                            <select name="smoking">
+                                <option value="" disabled selected hidden>Choose Smoking</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
                         </div>
                         <!-- Input for History of Smoking -->
                         <div class="regist_input_box">
                             <span class="details">History of Smoking</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose History of Smoking</option>
-                                <option>Yes</option>
-                                <option>No</option>
+                            <!-- <input type="text" placeholder="Marginal Adhesion" required> -->
+                            <select name="hx_smoking">
+                                <option value="" disabled selected hidden>Choose History of Smoking</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
                         </div>
                         <!-- Input for History of Radiotherapy -->
                         <div class="regist_input_box">
                             <span class="details">History of Radiotherapy</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose History of Radiotherapy</option>
-                                <option>Yes</option>
-                                <option>No</option>
+                            <!-- <input type="text" placeholder="Single Epithelial Cell Size" required> -->
+                            <select name="hx_radiotherapy">
+                                <option value="" disabled selected hidden>Choose History of Radiotherapy</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
                         </div>
                         <!-- Input for Thyroid Function -->
                         <div class="regist_input_box">
                             <span class="details">Thyroid Function</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Thyroid Function</option>
-                                <option>Normal</option>
-                                <option>Abnormal</option>
+                            <!-- <input type="text" placeholder="Bare Nuclei" required> -->
+                            <select name="thyroid_function">
+                                <option value="" disabled selected hidden>Choose Thyroid Function</option>
+                                <option value="0">Normal</option>
+                                <option value="1">Abnormal</option>
                             </select>
                         </div>
                         <!-- Input for Physical Examination -->
                         <div class="regist_input_box">
                             <span class="details">Physical Examination</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Physical Examination</option>
-                                <option>Yes</option>
-                                <option>No</option>
+                            <!-- <input type="text" placeholder="Bland Chromatin" required> -->
+                            <select name="physical_exam">
+                                <option value="" disabled selected hidden>Choose Physical Examination</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
                         </div>
                         <!-- Input for Adenopathy -->
                         <div class="regist_input_box">
                             <span class="details">Adenopathy</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Adenopathy</option>
-                                <option>Yes</option>
-                                <option>No</option>
+                            <!-- <input type="text" placeholder="Normal Nucleoli" required> -->
+                            <select name="adenopathy">
+                                <option value="" disabled selected hidden>Choose Adenopathy</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
                             </select>
                         </div>
                         <!-- Input for Pathology -->
                         <div class="regist_input_box">
                             <span class="details">Pathology</span>
-                            <input type="number" placeholder="Enter Pathology" required>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <input type="number" name="pathology" placeholder="Enter Pathology" required>
                         </div>
                         <!-- Input for Focality -->
                         <div class="regist_input_box">
                             <span class="details">Focality</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Focality</option>
-                                <option>Unifocal</option>
-                                <option>Multifocal</option>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <select name="focality">
+                                <option value="" disabled selected hidden>Choose Focality</option>
+                                <option value="0">Unifocal</option>
+                                <option value="1">Multifocal</option>
                             </select>
                         </div>
                         <!-- Input for Risk -->
                         <div class="regist_input_box">
                             <span class="details">Risk</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Risk</option>
-                                <option>Low</option>
-                                <option>Intermediate</option>
-                                <option>High</option>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <select name="risk">
+                                <option value="" disabled selected hidden>Choose Risk</option>
+                                <option value="0">Low</option>
+                                <option value="1">Intermediate</option>
+                                <option value="2">High</option>
                             </select>
                         </div>
                         <!-- Input for Tumor size classification -->
                         <div class="regist_input_box">
                             <span class="details">Tumor size classification</span>
-                            <input type="number" placeholder="Enter Tumor size classification" required>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <input type="number" name="t" placeholder="Enter Tumor size classification" required>
                         </div>
                         <!-- Input for Lymph node involvement -->
                         <div class="regist_input_box">
                             <span class="details">Lymph node involvement</span>
-                            <input type="number" placeholder="Enter Lymph node involvement" required>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <input type="number" name="n" placeholder="Enter Lymph node involvement" required>
                         </div>
                         <!-- Input for Metastasis -->
                         <div class="regist_input_box">
                             <span class="details">Metastasis</span>
-                            <input type="number" placeholder="Enter Metastasis" required>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <input type="number" name="m" placeholder="Enter Metastasis" required>
                         </div>
                         <!-- Input for Stage -->
                         <div class="regist_input_box">
                             <span class="details">Stage</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Stage</option>
-                                <option>I</option>
-                                <option>II</option>
-                                <option>III</option>
-                                <option>IV</option>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <select name="stage">
+                                <option value="" disabled selected hidden>Choose Stage</option>
+                                <option value="0">I</option>
+                                <option value="1">II</option>
+                                <option value="2">III</option>
+                                <option value="3">IV</option>
                             </select>
                         </div>
                         <!-- Input for Response -->
                         <div class="regist_input_box">
                             <span class="details">Response</span>
-                            <select>
-                                <option value="Gender" disabled selected hidden>Choose Response</option>
-                                <option>Excellent</option>
-                                <option>Indeterminate</option>
-                                <option>Biochemical Incomplete</option>
-                                <option>Structural Incomplete</option>
+                            <!-- <input type="text" placeholder="Mitoses" required> -->
+                            <select name="response">
+                                <option value="" disabled selected hidden>Choose Response</option>
+                                <option value="0">Excellent</option>
+                                <option value="1">Indeterminate</option>
+                                <option value="2">Biochemical Incomplete</option>
+                                <option value="3">Structural Incomplete</option>
                             </select>
                         </div>
                     </div>
@@ -639,6 +654,10 @@
                     <div class="button">
                         <input type="submit" value="Predict Cancer">
                     </div>
+                    <div id="response4441">
+                        <!-- Image and result will be displayed here -->
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -650,53 +669,43 @@
         <div id="disease-symptoms9" class="regist_container">
             <div class="title">Enter Disease Symptoms</div>
             <div class="regist_content">
-                <form action="#">
+                <form action="" method="post" id="cancer-prediction-prostate-form">
                     <div class="user-details">
                         <!-- Input for Radius -->
                         <div class="regist_input_box">
                             <span class="details">Radius</span>
-                            <input type="text" placeholder="Radius" required>
-                        </div>
-                        <!-- Input for Texture -->
-                        <div class="regist_input_box">
-                            <span class="details">Texture</span>
-                            <input type="text" placeholder="Texture" required>
-                        </div>
-                        <!-- Input for Perimeter -->
-                        <div class="regist_input_box">
-                            <span class="details">Perimeter</span>
-                            <input type="text" placeholder="Perimeter" required>
+                            <!-- <input type="text" placeholder="Radius" required> -->
+                            <input type="number" name="Radius" placeholder="Enter Radius" required>
                         </div>
                         <!-- Input for Area -->
                         <div class="regist_input_box">
                             <span class="details">Area</span>
-                            <input type="text" placeholder="Area" required>
+                            <input type="number" name="Area" placeholder="Enter Area" required>
                         </div>
                         <!-- Input for Smoothness -->
                         <div class="regist_input_box">
                             <span class="details">Smoothness</span>
-                            <input type="text" placeholder="Smoothness" required>
+                            <input type="number" name="Smoothness" step="any" placeholder="Enter Smoothness" required>
                         </div>
                         <!-- Input for Compactness -->
                         <div class="regist_input_box">
                             <span class="details">Compactness</span>
-                            <input type="text" placeholder="Compactness" required>
+                            <input type="number"  name="Compactness" step="any" placeholder="Enter Compactness" required>
                         </div>
                         <!-- Input forSymmetry -->
                         <div class="regist_input_box">
                             <span class="details">Symmetry</span>
-                            <input type="text" placeholder="Symmetry" required>
-                        </div>
-                        <!-- Input for Fractal Dimension -->
-                        <div class="regist_input_box">
-                            <span class="details">Fractal Dimension</span>
-                            <input type="text" placeholder="Fractal Dimension" required>
+                            <input type="number" name="Symmetry" placeholder="Enter Symmetry" required>
                         </div>
                     </div>
                     <!-- Submit Button -->
                     <div class="button">
                         <input type="submit" value="Predict Cancer">
                     </div>
+                    <div id="response441">
+                        <!-- Image and result will be displayed here -->
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -1039,6 +1048,78 @@
 
             xhr.send(formData);
         });
+    </script>
+
+    <script>
+        document.getElementById("cancer-prediction-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            let formData = new FormData(this);
+            let jsonObject = {};
+
+            formData.forEach((value, key) => {
+                jsonObject[key] = value;
+            });
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "backend/thyroid.php", true);
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            xhr.setRequestHeader("Content-Type", "application/json"); // Ensure JSON is sent
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    let responseObj = JSON.parse(xhr.responseText);
+                    document.getElementById("response4441").innerHTML = responseObj.response.prediction;
+                } else {
+                    let responseObj = JSON.parse(xhr.responseText);
+                    document.getElementById("response4441").innerHTML = "Error: " + responseObj.response.prediction;
+                }
+            };
+
+            xhr.onerror = function () {
+                alert("Request failed. Check the console for errors.");
+            };
+
+            console.log(JSON.stringify(jsonObject)); // Debugging
+            xhr.send(JSON.stringify(jsonObject)); // Send JSON instead of FormData
+        });
+
+    </script>
+
+    <script>
+        document.getElementById("cancer-prediction-prostate-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            let formData = new FormData(this);
+            let jsonObject = {};
+
+            formData.forEach((value, key) => {
+                jsonObject[key] = value;
+            });
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "backend/prostate.php", true);
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            xhr.setRequestHeader("Content-Type", "application/json"); // Ensure JSON is sent
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    let responseObj = JSON.parse(xhr.responseText);
+                    document.getElementById("response441").innerHTML = responseObj.response.prediction;
+                } else {
+                    let responseObj = JSON.parse(xhr.responseText);
+                    document.getElementById("response441").innerHTML = "Error: " + responseObj.response.prediction;
+                }
+            };
+
+            xhr.onerror = function () {
+                alert("Request failed. Check the console for errors.");
+            };
+
+            console.log(JSON.stringify(jsonObject)); // Debugging
+            xhr.send(JSON.stringify(jsonObject)); // Send JSON instead of FormData
+        });
+
     </script>
 </body>
 
